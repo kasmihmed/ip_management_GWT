@@ -1,0 +1,3 @@
+# Module ip_gestion
+# RPC service class, partial path of RPC policy file
+com.stage.projet.client.GreetingService, 800B4CB6A993420CBA40C67E2194CE95.gwt.rpc

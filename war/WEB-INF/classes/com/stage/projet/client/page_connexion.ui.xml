@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:p2="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.titre_du_site {
+	
+		}
+		.footer {
+		
+		
+		}
+		.body_style {
+			background-color: White;
+			
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid width="694px" height="132px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Entete12.png" width="1291px" height="150px"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		
+		
+		
+		<g:Grid width="1302px" height="402px">
+			<g:row>
+				<g:customCell>
+					<g:HorizontalPanel width="1295px" height="501px">
+						<g:HTMLPanel width="229px" height="274px"/>
+						
+						<g:Grid width="1132px" height="516px" styleName="{style.body_style}">
+							<g:row>
+								<g:customCell>
+									<g:Grid cellPadding="1" cellSpacing="1">
+										
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+													<g:Label text="login :" width="90px"/>
+													<g:TextBox maxLength="25" ui:field="login" width="190px"/>
+												</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+													<g:Label text="mot de passe :" width="90px"/>
+													<g:PasswordTextBox width="190px" maxLength="25" ui:field="mdp"/>
+												</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+										<g:row>
+											<g:customCell>
+												<g:HTML wordWrap="true" width="92px" height="15px"/>
+											</g:customCell>
+										</g:row>
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+													<g:HTML wordWrap="true" width="90px" height="1px"></g:HTML>
+													<g:Button ui:field="button" width="150px" height="35px">connexion</g:Button>
+												</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+									</g:Grid>
+								</g:customCell>
+
+							</g:row>
+						</g:Grid>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Grid width="703px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Footer1.png" width="1300px" height="120px"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:HTMLPanel>
+</ui:UiBinder> 

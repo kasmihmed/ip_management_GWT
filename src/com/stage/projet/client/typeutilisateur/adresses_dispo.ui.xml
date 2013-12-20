@@ -1,0 +1,98 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client" xmlns:p2="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.for_table {
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid>
+			<g:row>
+				<g:customCell>
+					<g:Image url="Entete12.png"/>
+				</g:customCell>
+			</g:row>
+			<g:row>
+				<g:customCell>
+					<g:HorizontalPanel>
+						<g:HTML wordWrap="true" width="850px" height="2px"/>
+						<g:Label width="250px" ui:field="MonNom" height="4px"/>
+						<g:HTML wordWrap="true" width="100px"></g:HTML>
+						<g:Hyperlink text="Se déconnecter" targetHistoryToken="newHistoryToken" width="130px" height="25" ui:field="Deconnexion"/>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Grid width="1095px">
+			<g:row>
+				<g:customCell>
+					<g:HorizontalPanel>
+						<g:VerticalPanel>
+							<g:HTML wordWrap="true" height="40px"></g:HTML>
+							<g:Button width="170px" height="50px" ui:field="page_acceuil" text="Accueil">Page d'acceuil</g:Button>
+							<g:HTML wordWrap="true" height="20px"></g:HTML>
+							<g:Button width="170px" height="50px" ui:field="adresse_dispo">Adresses disponibles</g:Button>
+							<g:HTML wordWrap="true" height="20px"></g:HTML>
+							<g:Cell verticalAlignment="ALIGN_MIDDLE">
+								<g:Button width="170px" height="50px" ui:field="ajouter_terminal" text="Mes terminaux">Ajouter terminal</g:Button>
+							</g:Cell>
+							<g:HTML wordWrap="true" height="20px"></g:HTML>
+							<g:Cell verticalAlignment="ALIGN_MIDDLE">
+								<g:Button width="170px" height="50px" text="Mes adresses" ui:field="MesAdresses">Demande affectation</g:Button>
+							</g:Cell>
+							<g:HTML wordWrap="true" height="20px"></g:HTML>
+							<g:Button text="Modifer mes infos" width="170px" height="50px" ui:field="ModifierInfos"/>
+							<g:HTML wordWrap="true" width="170px" height="150px"></g:HTML>
+						
+						</g:VerticalPanel>
+						<g:HorizontalPanel>
+							<g:HTML wordWrap="true" width="50px" height="2px"></g:HTML>
+							<g:VerticalPanel>
+								<g:HTML wordWrap="true" width="7px" height="50px"></g:HTML>
+								<g:FlexTable width="410px" ui:field="table_plage" styleName="for_table_test"/>
+								<g:HTML wordWrap="true" height="69px"/>
+								<g:ScrollPanel width="550px" height="300px">
+									<g:FlexTable width="" ui:field="table_ip" height=""/>
+								</g:ScrollPanel>
+								<g:HTML wordWrap="true" height="43px"/>
+								<g:VerticalPanel ui:field="VP">
+									<g:HorizontalPanel>
+										<g:Label text="adresse ip :"/>
+										<g:TextBox enabled="false" height="12px" ui:field="adresse_selectione" width="28px"/>
+										<g:Label text="-"/>
+										<g:TextBox width="44px" height="13px" enabled="false" ui:field="adresse_selectione2"/>
+										<g:Label text="-"/>
+										<g:TextBox width="45px" height="13px" enabled="false" ui:field="adresse_selectione3"/>
+										<g:Label text="-"/>
+										<g:TextBox height="13px" width="37px" enabled="false" ui:field="adresse_selectione5"/>
+										<g:Label text="terminal :"/>
+										<g:ListBox ui:field="mes_terminaux"/>
+									</g:HorizontalPanel>
+									<g:HTML wordWrap="true" height="16px"/>
+									<g:HorizontalPanel>
+										<g:Label text="date debut"/>
+										<p2:DateBox ui:field="date_debut"/>
+										<g:Label text="date de fin :"/>
+										<p2:DateBox ui:field="date_fin"/>
+									</g:HorizontalPanel>
+									<g:Button ui:field="valider_affectation">affecter</g:Button>
+								</g:VerticalPanel>
+							</g:VerticalPanel>
+						</g:HorizontalPanel>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Grid>
+			<g:row>
+				<g:customCell>
+					<g:Image url="Footer1.png"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

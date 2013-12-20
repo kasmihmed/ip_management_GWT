@@ -1,0 +1,138 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.titre_du_site {
+		}
+	</ui:style>
+	<g:HTMLPanel width="1300" height="800">
+		<g:Grid width="694px" height="36px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Entete12.png"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		
+		
+		
+		<g:Grid width="698px" height="402px">
+		    
+		    
+		    
+		    
+		    
+		    <g:row>
+		<g:customCell>
+					<g:HorizontalPanel>
+						<g:HTML wordWrap="true" width="850px" height="2px"/>
+						<g:Label width="250px" ui:field="MonNom" height="4px"/>
+						<g:HTML wordWrap="true" width="100px"></g:HTML>
+						<g:Hyperlink text="Se déconnecter" targetHistoryToken="newHistoryToken" width="130px" height="25" ui:field="hyperlink"/>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		    
+		    
+		    
+		    
+		    
+			<g:row>
+				<g:customCell>
+					<g:HorizontalPanel>
+						<g:VerticalPanel>
+							<g:Button width="157px" ui:field="button_1" text="Accueil" height="50px"/>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button1" ui:field="ajouter_plage" text="Ajouter une plage">ajouter une plage </g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							
+							<g:Button styleName="gwt-Button1" ui:field="button123" text="Supprimer une plage" width="157px" height="50px" />
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" text="Ajouter un utilisateur" styleName="gwt-Button2" ui:field="ajouter_uti" height="50px"/>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" styleName="gwt-Button2" ui:field="modif_uti1" height="50px" text="Modifier un utilisateur">modifier un utilisateur</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" styleName="gwt-Button2" ui:field="button_14" height="50px" text="Supprimer un utilisateur">supprimer un utilisateur</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button3" ui:field="button_3" text="Affectations">afficher les affectation des adresses ip</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button4" ui:field="button18" text="Historique ">consulter l'historique d'affectation d'une adresse ip</g:Button>
+							
+							</g:VerticalPanel>
+						<g:VerticalPanel>
+							<g:VerticalPanel>
+								<g:HTML wordWrap="true" height="20px"></g:HTML>
+								<g:HorizontalPanel>
+									<g:HTML wordWrap="true" width="109px">&nbsp;</g:HTML>
+								</g:HorizontalPanel>
+							</g:VerticalPanel>
+							<g:HorizontalPanel height="293px" width="397px">
+								<g:HTML wordWrap="true" width="78px">&nbsp;</g:HTML>
+								<g:VerticalPanel>
+									<g:ScrollPanel width="1150px" height="257px">
+										<g:FlexTable height="256px" width="1150px" ui:field="ma_table" cellSpacing="10" cellPadding="5"/>
+									</g:ScrollPanel>
+									<g:HTML wordWrap="true" height="26px"/>
+									<g:Grid ui:field="ma_grid" width="657" height="100">
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+										<g:Label text="nom :" width="80px" height="27px"/>
+										<g:TextBox ui:field="nom_modifier" width="120px"/>
+										<g:HTML wordWrap="true" width="10px" height="3px"></g:HTML>
+										<g:Label text="prenom :" width="80px"/>
+										<g:TextBox ui:field="prenom_modifier" width="120px"/>
+										<g:HTML wordWrap="true" width="10px" height="3px"></g:HTML>
+										<g:Label text="email:" width="80px"/>
+										<g:TextBox ui:field="adresse_modifier" width="170px"/>
+									</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+										<g:Label text="cin :" width="80px" height="25px"/>
+										<g:TextBox ui:field="cin_modifier" width="120px"/>
+										<g:HTML wordWrap="true" width="10px" height="2px"></g:HTML>
+										<g:Label text="tel :" width="80px" height="23px"/>
+										<g:TextBox ui:field="tel_modifier" width="120px"/>
+										<g:HTML wordWrap="true" width="10px" height="4px"></g:HTML>
+										<g:Label text="type  :" width="80px"/>
+										<g:ListBox ui:field="type"/>
+									</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+										<g:row>
+											<g:customCell>
+												<g:HorizontalPanel>
+													<g:Label text="login" width="80px" height="25px"/>
+													<g:TextBox width="120px" ui:field="login_modifier"/>
+													<g:HTML wordWrap="true" width="10px" height="2px"></g:HTML>
+										<g:Label text="mot de passe" width="80px"/>
+										<g:PasswordTextBox ui:field="mdp_modifier" width="120px"/>
+										<g:HTML wordWrap="true" width="90px" height="1px"></g:HTML>
+										<g:Button ui:field="modifier_b" width="120px">Modifier</g:Button>
+									</g:HorizontalPanel>
+											</g:customCell>
+										</g:row>
+									</g:Grid>
+									
+								</g:VerticalPanel>
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Grid width="703px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Footer1.png"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:HTMLPanel>
+</ui:UiBinder>  

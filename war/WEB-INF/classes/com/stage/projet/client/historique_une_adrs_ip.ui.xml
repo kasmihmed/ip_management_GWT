@@ -1,0 +1,118 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.titre_du_site {
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Grid width="694px" height="36px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Entete12.png"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		
+		
+		
+		<g:Grid width="698px" height="402px">
+		
+		
+		<g:row>
+		<g:customCell>
+					<g:HorizontalPanel>
+						<g:HTML wordWrap="true" width="850px" height="2px"/>
+						<g:Label width="250px" ui:field="MonNom"/>
+						<g:HTML wordWrap="true" width="100px"></g:HTML>
+						<g:Hyperlink text="Se déconnecter" targetHistoryToken="newHistoryToken" width="130px" height="25" ui:field="hyperlink"/>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		
+			<g:row>
+				<g:customCell>
+					<g:HorizontalPanel width="435px">
+						<g:VerticalPanel>
+							<g:Button width="157px" ui:field="button_1" text="Accueil" height="50px"/>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button1" ui:field="ajouter_plage" text="Ajouter une plage">ajouter une plage </g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button styleName="gwt-Button1" ui:field="button123" text="Supprimer une plage" width="157px" height="50px" />
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" text="Ajouter un utilisateur" styleName="gwt-Button2" ui:field="ajouter_uti" height="50px"/>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" styleName="gwt-Button2" ui:field="modif_uti1" height="50px" text="Modifier un utilisateur">modifier un utilisateur</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button width="157px" styleName="gwt-Button2" ui:field="button_14" height="50px" text="Supprimer un utilisateur">supprimer un utilisateur</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button3" ui:field="button_3" text="Affectations">afficher les affectation des adresses ip</g:Button>
+							<g:HTML wordWrap="true" height="10px"></g:HTML>
+							<g:Button height="50px" width="157px" styleName="gwt-Button4" ui:field="button18" text="Historique">consulter l'historique d'affectation d'une adresse ip</g:Button>
+							</g:VerticalPanel>
+						<g:VerticalPanel width="634px" height="416px">
+							<g:HTML wordWrap="true" height="30px"></g:HTML>
+							<g:HorizontalPanel width="533px" height="97px">
+								<g:HTML wordWrap="true" width="100px" height="7px"></g:HTML>
+								<g:Grid width="422px" height="96px" borderWidth="0">
+									<g:row>
+										<g:customCell>
+											<g:HorizontalPanel>
+												<g:Label text="adresse ip" width="90px"/>
+												<g:TextBox width="30px" ui:field="champ1"/>
+												<g:Label text="."/>
+												<g:TextBox ui:field="champ2" width="30px"/>
+												<g:Label text="."/>
+												<g:TextBox ui:field="champ3" width="30px"/>
+												<g:Label text="."/>
+												<g:TextBox width="30px" ui:field="champ4"/>
+											</g:HorizontalPanel>
+										</g:customCell>
+									</g:row>
+									<g:row>
+										<g:customCell>
+											<g:HorizontalPanel>
+												<g:Label text="Nom Utilisateur" width="90px"/>
+												<g:TextBox ui:field="NomU" width="120px"/>
+												<g:HTML wordWrap="true" width="10px" height="4px"></g:HTML>
+												<g:Label text="Prenom"/>
+												<g:TextBox ui:field="PrenomU" width="120px"/>
+											</g:HorizontalPanel>
+										</g:customCell>
+									</g:row>
+									<g:row>
+										<g:customCell>
+											<g:HorizontalPanel>
+												<g:Label text="Terminal" width="90px"/>
+												<g:TextBox ui:field="NomM" width="100px"/>
+											</g:HorizontalPanel>
+										</g:customCell>
+									</g:row>
+								</g:Grid>
+								<g:Button ui:field="button">rechercher</g:Button>
+							</g:HorizontalPanel>
+							<g:HTML height="30px" wordWrap="true"></g:HTML>
+							<g:HorizontalPanel width="533px" height="293px">
+								<g:HTML wordWrap="true" width="70px" height="12px"></g:HTML>
+								<g:ScrollPanel width="568px" height="268px">
+									<g:FlexTable ui:field="maTable" width="538px" height="292px"/>
+								</g:ScrollPanel>
+							
+							</g:HorizontalPanel>
+						</g:VerticalPanel>
+					</g:HorizontalPanel>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+		<g:Grid width="703px">
+			<g:row>
+				<g:customCell>
+					<g:Image url="Footer1.png"/>
+				</g:customCell>
+			</g:row>
+		</g:Grid>
+	</g:HTMLPanel>
+</ui:UiBinder> 

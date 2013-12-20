@@ -1,0 +1,2 @@
+serviceClass: com.stage.projet.client.GreetingService
+path: 800B4CB6A993420CBA40C67E2194CE95.gwt.rpc
